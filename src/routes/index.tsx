@@ -65,8 +65,8 @@ function Dashboard() {
               <Gauge className="size-4 text-primary" /> Índice de Prontidão Regulatória
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex items-center gap-5">
-            <Ring value={project.readiness} />
+          <CardContent className="flex flex-wrap items-center justify-center gap-5">
+            <ReadinessRing value={project.readiness} status={project.verdict} />
             <div className="space-y-2 text-xs">
               <StatusBadge
                 status={project.readiness >= 90 ? "conforme" : project.readiness >= 70 ? "pendente" : "bloqueado"}
