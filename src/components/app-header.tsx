@@ -15,7 +15,7 @@ import {
 import { projects } from "@/data/mock";
 
 export function AppHeader() {
-  const [active, setActive] = useState(projects[0]);
+  const [active, setActive] = useState(projects[0]!);
 
   return (
     <header className="sticky top-0 z-20 flex h-14 items-center gap-3 border-b bg-card/85 px-3 backdrop-blur">
