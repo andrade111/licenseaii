@@ -61,9 +61,10 @@ function Matriz() {
       <div>
         <h1 className="text-2xl font-semibold">Matriz Interativa de Requisitos</h1>
         <p className="text-sm text-muted-foreground">
-          Três passos para gerar a matriz parametrizada de exigências por órgão competente.
+          Contexto: {project.name} — três passos para gerar a matriz parametrizada por órgão competente.
         </p>
       </div>
+
 
       <Card className="surface-panel">
         <CardHeader className="pb-3">
