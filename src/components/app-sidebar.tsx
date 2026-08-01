@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { LayoutDashboard, Grid3x3, BotMessageSquare, KanbanSquare, Mountain } from "lucide-react";
+import { LayoutDashboard, Grid3x3, BotMessageSquare, KanbanSquare } from "lucide-react";
 
 import {
   Sidebar,
@@ -31,12 +31,16 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader>
         <div className="flex items-center gap-2.5 px-1 py-1.5">
-          <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-            <Mountain className="size-4" />
-          </span>
+          <img
+            src="/logo-licenseai.png"
+            alt="Logo LicenseAI"
+            className="size-8 shrink-0 rounded-lg bg-sidebar-accent object-contain p-0.5"
+          />
           {!collapsed && (
             <span className="flex flex-col leading-tight">
-              <span className="font-display text-sm font-semibold">GeoReg Matrix</span>
+              <span className="font-display text-sm font-semibold">
+                License<span className="text-sidebar-primary">AI</span>
+              </span>
               <span className="text-[11px] text-sidebar-foreground/60">Compliance minerário</span>
             </span>
           )}
@@ -64,7 +68,7 @@ export function AppSidebar() {
       {!collapsed && (
         <SidebarFooter>
           <p className="px-2 pb-1 text-[11px] leading-snug text-sidebar-foreground/55">
-            Base normativa atualizada em 01/08/2026 · ANM, SEMAD-MG, SEMAS-PA
+            Base normativa atualizada em 01/08/2026 · ANM, SEMAD-MG, SEMAS-PA, INEMA-BA
           </p>
         </SidebarFooter>
       )}

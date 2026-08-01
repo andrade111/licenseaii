@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Filter } from "lucide-react";
 
@@ -14,17 +14,18 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Badge } from "@/components/ui/badge";
 import { StatusBadge } from "@/components/status-badge";
 import { buildMatrix, minerals, phases, states, type Sphere } from "@/data/mock";
+import { useProject } from "@/context/project-context";
 
 export const Route = createFileRoute("/matriz")({
   head: () => ({
     meta: [
-      { title: "Matriz Interativa de Requisitos | GeoReg Matrix" },
+      { title: "Matriz Interativa de Requisitos | LicenseAI" },
       {
         name: "description",
         content:
           "Filtre por mineral, estado/município e fase do direito minerário para ver documentos, taxas e certidões exigidos por órgão.",
       },
-      { property: "og:title", content: "Matriz Interativa de Requisitos | GeoReg Matrix" },
+      { property: "og:title", content: "Matriz Interativa de Requisitos | LicenseAI" },
       {
         property: "og:description",
         content: "Requisitos parametrizados por ANM, Secretaria Estadual e Prefeitura.",
@@ -37,23 +38,33 @@ export const Route = createFileRoute("/matriz")({
 const order: Sphere[] = ["Federal", "Estadual", "Municipal"];
 
 function Matriz() {
-  const [mineral, setMineral] = useState("Lítio");
-  const [uf, setUf] = useState("MG");
-  const [city, setCity] = useState("Araçuaí");
-  const [phase, setPhase] = useState("Licenciamento Ambiental");
+  const { project } = useProject();
+  const [mineral, setMineral] = useState(project.mineral);
+  const [uf, setUf] = useState(project.uf);
+  const [city, setCity] = useState(project.city);
+  const [phase, setPhase] = useState(project.phase);
+
+  useEffect(() => {
+    setMineral(project.mineral);
+    setUf(project.uf);
+    setCity(project.city);
+    setPhase(project.phase);
+  }, [project]);
 
   const cities = states.find((s) => s.uf === uf)?.cities ?? [];
   const rows = useMemo(() => buildMatrix(mineral, uf, city, phase), [mineral, uf, city, phase]);
   const grouped = order.map((s) => ({ sphere: s, items: rows.filter((r) => r.sphere === s) }));
+
 
   return (
     <div className="space-y-5">
       <div>
         <h1 className="text-2xl font-semibold">Matriz Interativa de Requisitos</h1>
         <p className="text-sm text-muted-foreground">
-          Três passos para gerar a matriz parametrizada de exigências por órgão competente.
+          Contexto: {project.name} — três passos para gerar a matriz parametrizada por órgão competente.
         </p>
       </div>
+
 
       <Card className="surface-panel">
         <CardHeader className="pb-3">
