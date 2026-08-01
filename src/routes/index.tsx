@@ -13,6 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { StatusBadge, RiskBadge } from "@/components/status-badge";
+import { ReadinessRing } from "@/components/readiness-ring";
 import { useProject } from "@/context/project-context";
 
 export const Route = createFileRoute("/")({
@@ -34,36 +35,6 @@ export const Route = createFileRoute("/")({
   component: Dashboard,
 });
 
-function Ring({ value }: { value: number }) {
-  const size = 176;
-  const stroke = 14;
-  const r = (size - stroke) / 2;
-  const c = 2 * Math.PI * r;
-  const cx = size / 2;
-  return (
-    <div className="relative grid size-44 place-items-center">
-      <svg viewBox={`0 0 ${size} ${size}`} className="size-full -rotate-90">
-        <circle cx={cx} cy={cx} r={r} className="fill-none stroke-muted" strokeWidth={stroke} />
-        <circle
-          cx={cx}
-          cy={cx}
-          r={r}
-          className="fill-none stroke-primary transition-all duration-700"
-          strokeWidth={stroke}
-          strokeLinecap="round"
-          strokeDasharray={c}
-          strokeDashoffset={c - (c * value) / 100}
-        />
-      </svg>
-      <div className="absolute inset-0 grid place-items-center text-center">
-        <div>
-          <p className="font-display text-3xl font-semibold leading-none">{value}%</p>
-          <p className="mt-1 text-[11px] text-muted-foreground">prontidão</p>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function Dashboard() {
   const { project } = useProject();
@@ -94,8 +65,8 @@ function Dashboard() {
               <Gauge className="size-4 text-primary" /> Índice de Prontidão Regulatória
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex items-center gap-5">
-            <Ring value={project.readiness} />
+          <CardContent className="flex flex-wrap items-center justify-center gap-5">
+            <ReadinessRing value={project.readiness} status={project.verdict} />
             <div className="space-y-2 text-xs">
               <StatusBadge
                 status={project.readiness >= 90 ? "conforme" : project.readiness >= 70 ? "pendente" : "bloqueado"}
