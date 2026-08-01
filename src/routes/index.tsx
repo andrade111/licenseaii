@@ -13,6 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { StatusBadge, RiskBadge } from "@/components/status-badge";
+import { ReadinessRing } from "@/components/readiness-ring";
 import { useProject } from "@/context/project-context";
 
 export const Route = createFileRoute("/")({
