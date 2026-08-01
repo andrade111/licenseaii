@@ -34,7 +34,7 @@ type Task = {
   project: string;
   agency: string;
   column: ColumnId;
-  reason?: string;
+  reason?: string | undefined;
 };
 
 const initial: Task[] = [
