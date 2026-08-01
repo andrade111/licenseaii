@@ -27,7 +27,7 @@ export const Route = createFileRoute("/bot")({
       },
     ],
   }),
-  component: BotPage;
+  component: BotPage,
 });
 
 function BotPage() {

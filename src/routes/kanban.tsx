@@ -37,12 +37,6 @@ type Task = {
   reason?: string;
 };
 
-const columns: { id: ColumnId; title: string; accent: string }[] = [
-  { id: "andamento", title: "Em andamento", accent: "bg-info" },
-  { id: "recorreção" as ColumnId, title: "Recorreção", accent: "bg-warning" },
-  { id: "concluidos", title: "Concluídos", accent: "bg-success" },
-];
-
 const initial: Task[] = [
   { id: "t1", title: "Plano de Pesquisa — poligonal Araçuaí", project: "Lítio / MG", agency: "ANM 6ª Região", column: "andamento" },
   { id: "t2", title: "EIA/RIMA — capítulo de fauna", project: "Ferro / Itabirito-MG", agency: "SEMAD-MG", column: "andamento" },
@@ -53,8 +47,6 @@ const initial: Task[] = [
   { id: "t7", title: "PRAD — Recuperação de áreas degradadas", project: "Ferro / MG", agency: "SEMAD-MG", column: "concluidos" },
   { id: "t8", title: "ART/CREA do responsável técnico", project: "Lítio / MG", agency: "ANM", column: "concluidos" },
 ];
-
-export default function noop() {}
 
 function Kanban() {
   const [tasks, setTasks] = useState(initial);
