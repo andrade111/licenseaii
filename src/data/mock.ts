@@ -97,10 +97,11 @@ export const readinessTrend = [
 export const minerals = ["Lítio", "Ouro", "Ferro", "Bauxita", "Agregados"];
 export const states = [
   { uf: "MG", cities: ["Araçuaí", "Itabirito", "Conselheiro Lafaiete"] },
-  { uf: "BA", cities: ["Jacobina", "Caetité"] },
+  { uf: "BA", cities: ["Simões Filho", "Jacobina", "Caetité"] },
   { uf: "PA", cities: ["Paragominas", "Itaituba"] },
   { uf: "SP", cities: ["Ribeirão Preto", "Sorocaba"] },
 ];
+
 export const phases = [
   "Requerimento de Pesquisa",
   "Relatório Final de Pesquisa",
