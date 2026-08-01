@@ -14,13 +14,13 @@ import { botChecks } from "@/data/mock";
 export const Route = createFileRoute("/bot")({
   head: () => ({
     meta: [
-      { title: "Bot Validador de Pré-Protocolo | GeoReg Matrix" },
+      { title: "Bot Validador de Pré-Protocolo | LicenseAI" },
       {
         name: "description",
         content:
           "Auditoria automática de documentos técnicos minerários com checklist de conformidade e relatório executivo.",
       },
-      { property: "og:title", content: "Bot Validador de Pré-Protocolo | GeoReg Matrix" },
+      { property: "og:title", content: "Bot Validador de Pré-Protocolo | LicenseAI" },
       {
         property: "og:description",
         content: "Simule a checagem de Plano de Pesquisa, RFP e Licença Prévia antes do protocolo.",
