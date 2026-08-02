@@ -132,7 +132,7 @@ Redesenhe a seção de acompanhamento para uma estrutura visual estilo Trello di
 
 - Adicione interatividade fluida (drag-and-drop nos cards e feedback visual imediato ao acionar o botão de recorreção).
 
-Ajuste o layout da seção "Kanban Interorgânico / Quadro de Acompanhamento" no GeoReg Matrix para o formato clássico do Trello, organizando a leitura e visualização das colunas na horizontal (da esquerda para a direita).
+Ajuste o layout da seção "Kanban Interorgânico / Quadro de Acompanhamento" no LicenseAI para o formato clássico do Trello, organizando a leitura e visualização das colunas na horizontal (da esquerda para a direita).
 
 ---
 
