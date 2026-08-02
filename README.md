@@ -72,7 +72,7 @@ A plataforma resolve o problema de falta de padronização e riscos de atraso/mu
 
 - Insira dados fictícios realistas de processos de mineração em MG e PA para que a interface já nasça povoada e pronta para demonstração no Pitch.
 
-Atue como desenvolvedor frontend especialista. Atualize a aplicação "GeoReg Matrix" aplicando as modificações abaixo. Desenvolva o código de forma modular, enxuta e direta ao ponto, evitando redundâncias para otimizar o consumo de tokens.
+Atue como desenvolvedor frontend especialista. Atualize a aplicação "LicenseAI" aplicando as modificações abaixo. Desenvolva o código de forma modular, enxuta e direta ao ponto, evitando redundâncias para otimizar o consumo de tokens.
 
 ---
 
