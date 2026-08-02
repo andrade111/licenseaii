@@ -82,15 +82,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LicenseAI — Conformidade Regulatória Minerária" },
+      { title: "Dashboard Regulatório | LicenseAI" },
       {
         name: "description",
         content:
-          "LicenseAI: inteligência e conformidade regulatória para mineração — ANM, órgãos estaduais e prefeituras em uma matriz única.",
+          "Índice de Prontidão Regulatória, prazos de LP/LI/LO, condicionantes e risco fiscal dos projetos minerários.",
       },
       { name: "author", content: "LicenseAI" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Dashboard Regulatório | LicenseAI" },
+      { name: "twitter:title", content: "Dashboard Regulatório | LicenseAI" },
+      { property: "og:description", content: "Índice de Prontidão Regulatória, prazos de LP/LI/LO, condicionantes e risco fiscal dos projetos minerários." },
+      { name: "twitter:description", content: "Índice de Prontidão Regulatória, prazos de LP/LI/LO, condicionantes e risco fiscal dos projetos minerários." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8922517c-8776-46c3-a103-33bdf170b8e5/id-preview-adbbd719--7600b5be-baee-40eb-a618-dbd669818ec7.lovable.app-1785622945595.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8922517c-8776-46c3-a103-33bdf170b8e5/id-preview-adbbd719--7600b5be-baee-40eb-a618-dbd669818ec7.lovable.app-1785622945595.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

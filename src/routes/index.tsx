@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Dashboard Regulatório | LicenseAI" },
       {
         property: "og:description",
-        content: "Controle de conformidade minerária nas esferas federal, estadual e municipal.",
+        content: "Índice de Prontidão Regulatória, prazos de LP/LI/LO, condicionantes e risco fiscal dos projetos minerários.",
       },
     ],
   }),
