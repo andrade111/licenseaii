@@ -1,6 +1,6 @@
-# GeoReg Matrix Insights
+# LicenseAI Insights
 
-Crie uma aplicação web B2B em estilo SaaS Dashboard para uma plataforma chamada "GeoReg Matrix" — uma solução de inteligência e conformidade regulatória para o setor minerário brasileiro.
+Crie uma aplicação web B2B em estilo SaaS Dashboard para uma plataforma chamada "LicenceAI" — uma solução de inteligência e conformidade regulatória para o setor minerário brasileiro.
 
 A plataforma resolve o problema de falta de padronização e riscos de atraso/multa no licenciamento entre a ANM (Federal), Secretarias Estaduais de Meio Ambiente e Prefeituras.
 
