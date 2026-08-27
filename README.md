@@ -1,186 +1,98 @@
-# LicenseAI Insights
+<div align="center">
 
-Crie uma aplicação web B2B em estilo SaaS Dashboard para uma plataforma chamada "LicenceAI" — uma solução de inteligência e conformidade regulatória para o setor minerário brasileiro.
+# 💎 LicenseAI Insights
 
-A plataforma resolve o problema de falta de padronização e riscos de atraso/multa no licenciamento entre a ANM (Federal), Secretarias Estaduais de Meio Ambiente e Prefeituras.
+*Plataforma B2B (SaaS Dashboard) de inteligência regulatória e auditoria automatizada para o setor minerário brasileiro.*
 
----
+[![Hackathon Achievement](https://img.shields.io/badge/Hackathon-2º%20Lugar%20🏆-FFD700?style=for-the-badge&logo=trophy)](https://github.com/andrade111/licenseaii)
+[![Live Demo](https://img.shields.io/badge/Live_App-licenseaii.lovable.app-00C853?style=for-the-badge&logo=vercel)](https://licenseaii.lovable.app)
+[![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)](LICENSE)
 
-### 🎨 DESIGN & INTERFACE (UI/UX)
-
-- Design moderno, limpo e extremamente profissional voltado para a persona (Gerentes de Licenciamento/Compliance e Consultores Geológicos).
-
-- Paleta de cores: Tons de verde esmeralda/mineral, cinza ardósia, azul corporativo e indicadores visuais de status (Verde = Conforme, Amarelo = Pendente, Vermelho = Bloqueado/Risco).
-
-- Layout com Sidebar retrátil para navegação principal e Header com seções de perfil e seletor de projetos ativos.
+</div>
 
 ---
 
-### ⚙️ MÓDULOS E FUNCIONALIDADES PRINCIPAIS
+### 🏆 Destaque no Hackathon & Minhas Contribuições
 
-#### 1. Dashboard Principal (Overview de Projetos)
+Este projeto foi desenvolvido durante o **meu primeiro Hackathon**, onde alcançamos um **inédito 2º lugar geral** com uma solução focada nas dores de compliance do setor mineral.
 
-- Exibir cards de projetos ativos (Ex: "Projeto Lítio - Vale do Jequitinhonha / MG", "Pesquisa de Bauxita - PA").
-
-- Widget visual do "Índice de Prontidão Regulatória" (Regulator Readiness Index) em porcentagem (0% a 100%).
-
-- Gráfico/Progresso das condicionantes cumpridas vs. pendentes por esfera (Federal, Estadual e Municipal).
-
-#### 2. Matriz Interativa de Requisitos (Filtro Dinâmico)
-
-- Seletor de entrada com 3 passos simples:
-
-  1. Mineral (ex: Lítio, Ouro, Ferro, Bauxita, Agregados).
-
-  2. Estado / Município (ex: MG, BA, PA, SP).
-
-  3. Fase do Direito Minerário (ex: Requerimento de Pesquisa, Relatório Final de Pesquisa, Licenciamento Ambiental).
-
-- Ao filtrar, exibir a **Matriz Parametrizada de Requisitos**:
-
-  - Tabela organizada por Órgão Competente (ANM, Secretaria Estadual, Prefeitura).
-
-  - Lista detalhada de Documentos Obrigatórios, Taxas, Certidões e Modelos de Formulários.
-
-#### 3. Bot Validador & Assistente de Pré-Protocolo (O "Bot")
-
-- Interface de simulação de upload e checagem de documentos para a persona:
-
-  - O usuário faz o upload (ou insere dados) de um documento técnico (ex: Plano de Pesquisa / Licença Prévia).
-
-  - O Bot executa uma simulação de auditoria automática e exibe um Checklist de Conformidade com status:
-
-    - ✅ "Formato e campos obrigatórios preenchidos".
-
-    - ⚠️ "Atenção: Ausência de Certidão de Uso do Solo Municipal".
-
-    - ❌ "Documento fora do padrão exigido pela ANM regional".
-
-  - Botão para gerar e baixar um "Relatório Executivo de Auditoria Regulatória" em PDF/Resumo.
-
-#### 4. Kanban de Acompanhamento Interorgânico
-
-- Quadro estilo Kanban dividido em colunas:
-
-  - [Esfera Federal / ANM] | [Esfera Estadual / Licenciamento] | [Esfera Municipal / Certidões] | [Concluído / Prontidão]
-
-- Os cards devem permitir mover arquivos e atualizar status de pendências.
+**Minhas contribuições no projeto:**
+* 🎨 **Desenvolvimento do Protótipo (100%):** Concepção, design e codificação integral do frontend funcional, garantindo uma interface B2B fluida e de alto impacto para a banca avaliadora.
+* 📦 **Estruturação & Versionamento:** Organização completa da arquitetura do projeto e gerenciamento do repositório no GitHub.
+* 📢 **Estruturação do Pitch:** Participação ativa na concepção e organização da narrativa de apresentação e proposta de valor do negócio.
 
 ---
 
-### 📊 DADOS MOCKADOS (Exemplo para Protótipo)
+### 💡 Sobre a Solução
 
-- Insira dados fictícios realistas de processos de mineração em MG e PA para que a interface já nasça povoada e pronta para demonstração no Pitch.
+A falta de padronização e os frequentes riscos de atraso e multas no licenciamento minerário brasileiro exigem uma gestão integrada entre a **ANM (Federal)**, **Secretarias Estaduais de Meio Ambiente** e **Prefeituras**. 
 
-Atue como desenvolvedor frontend especialista. Atualize a aplicação "LicenseAI" aplicando as modificações abaixo. Desenvolva o código de forma modular, enxuta e direta ao ponto, evitando redundâncias para otimizar o consumo de tokens.
-
----
-
-### 1. 📊 DASHBOARD: INDICADORES ESTRATÉGICOS DE LICENCIAMENTO MINERÁRIO
-
-Aprofunde a visualização do Dashboard para que a mineradora e a persona executiva tenham controle total sobre os riscos e fases operacionais. Exiba os seguintes indicadores críticos:
-
-1. **Índice de Prontidão Regulatória (Regulator Readiness Index):** Score geral (0% a 100%) indicando o nível de conformidade dos processos.
-
-2. **Controle de Prazos & Vencimentos (Alertas):** 
-
-   - Licenças Prévias (LP), de Instalação (LI) e de Operação (LO) com contagem regressiva de dias para renovação.
-
-   - Prazos de cumprimento de exigências da ANM e formulários do órgão ambiental estadual.
-
-3. **Taxa de Cumprimento de Condicionantes:** Gráfico/barra de progresso mostrando a porcentagem de condicionantes ambientais/sociais executadas vs. pendentes.
-
-4. **Matriz de Risco Fiscal e Reputacional:** Indicador de nível de risco (Baixo, Médio, Crítico) para multas ou paralisação de lavra por inconformidade.
-
-5. **Visão Tripartida por Esfera:** Card sintetizado dividindo as pendências ativas por órgão:
-
-   - **Federal (ANM / IBAMA)**
-
-   - **Estadual (Secretaria de Meio Ambiente)**
-
-   - **Municipal (Uso e Ocupação do Solo)**
+O **LicenseAI** resolve essa descentralização centralizando indicadores de risco, auditoria documental via IA e acompanhamento dinâmico de condicionantes em uma única plataforma.
 
 ---
 
-### 2. 📋 KANBAN ESTILO TRELLO COM RECORREÇÃO AUTOMÁTICA VIA BOT
+### 🎯 Módulos & Funcionalidades Principais
 
-Redesenhe a seção de acompanhamento para uma estrutura visual estilo Trello dividida estritamente nas seguintes 3 colunas:
-
-- **Coluna 1: `Em andamento`**
-
-  - Cards representando processos e documentações técnicas em elaboração.
-
-- **Coluna 2: `Recorreção`**
-
-  - Cards que apresentaram inconformidade técnica ou documental prévia.
-
-  - Cada card nesta coluna deve exibir o motivo da pendência apontada pelo Bot.
-
-  - **Ação Interativa:** Incluir um botão **"Recorrigir"** em cada card.
-
-  - **Comportamento do Bot:** Ao clicar no botão "Recorrigir", exibir um efeito visual de carregamento ("*Bot reanalisando parâmetros...*") e, após a simulação, alterar o status da pendência e mover o card automaticamente para a coluna `Concluídos`.
-
-- **Coluna 3: `Concluídos`**
-
-  - Cards com documentação 100% validada e pronta para submissão oficial aos órgãos reguladores.
+| Módulo | Descrição & Recursos |
+| :--- | :--- |
+| **📊 Strategic Dashboard** | Visualização do **Regulator Readiness Index (0-100%)**, alertas com contagem regressiva para renovação de licenças (LP, LI, LO), taxa de cumprimento de condicionantes e matriz de risco fiscal/reputacional. |
+| **🔍 Matriz Interativa** | Filtro parametrizado de requisitos combinando **Mineral** (Lítio, Bauxita, Ouro), **UF/Município** e **Fase do Direito Minerário** para listar documentos obrigatórios, taxas e certidões. |
+| **🤖 Bot Validador & Pré-Protocolo** | Simulação de upload e auditoria técnica automatizada em arquivos técnicos (Ex: Plano de Pesquisa). Exibe checklist de conformidade instantâneo (Conforme / Atenção / Fora do padrão). |
+| **📋 Kanban Interorgânico** | Quadro horizontal estilo Trello organizado em 3 etapas (`Em andamento` ➔ `Recorreção` ➔ `Concluídos`). Possui automação visual de **Recorreção do Bot**, reanalisando e movendo o card automaticamente. |
 
 ---
 
-### 🎨 DESIGN E USABILIDADE
+### 🎨 Design & Diretrizes Visuais
 
-- Mantenha a estética limpa, moderna e responsiva (tons de verde mineral, cinza e badges coloridos para status).
-
-- Adicione interatividade fluida (drag-and-drop nos cards e feedback visual imediato ao acionar o botão de recorreção).
-
-Ajuste o layout da seção "Kanban Interorgânico / Quadro de Acompanhamento" no LicenseAI para o formato clássico do Trello, organizando a leitura e visualização das colunas na horizontal (da esquerda para a direita).
+* **Paleta de Cores:** Tons verde esmeralda/mineral, cinza ardósia e badges com indicadores de status corporativos (Verde = Conforme, Amarelo = Pendente, Vermelho = Risco Crítico).
+* **Navegação:** Sidebar retrátil responsiva, header com seletor de projetos ativos e suporte a arrastar e soltar (*drag-and-drop*) nos cards do Kanban.
 
 ---
 
-### 📋 ALTERAÇÃO DE LAYOUT: KANBAN HORIZONTAL (ESTILO TRELLO)
+### 🛠️ Tecnologias Utilizadas
 
-1. **Estrutura e Alinhamento Visual:**
-
-   - Organize as 3 colunas lado a lado no eixo horizontal (da esquerda para a direita):
-
-     `[Em andamento]` ➔ `[Recorreção]` ➔ `[Concluídos]`
-
-   - Utilize um container flexível com alinhamento horizontal (`flex-row` / `overflow-x-auto`) para que as colunas fiquem dispostas paralelamente, e não empilhadas de cima para baixo.
-
-   - Cada coluna deve possuir largura fixa/proporcional (ex: `min-w-[320px]`), mantendo os cards dispostos verticalmente **dentro** de sua respectiva coluna.
-
-2. **Fluxo de Ação e Automação:**
-
-   - **Coluna Esquerda (`Em andamento`):** Processos técnicos em elaboração.
-
-   - **Coluna Central (`Recorreção`):** Processos com pendências. Exibir botão **"Recorrigir"** que dispara a animação do Bot ("*Analisando pendências...*") e transfere automaticamente o card para a coluna da direita.
-
-   - **Coluna Direita (`Concluídos`):** Documentação 100% validada.
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Ferramentas de Build & Prototipagem:** Vite, Lovable Engine
+- **Gestão de Estado & Componentes:** Lucide React (ícones), Radix UI
 
 ---
 
-### ⚙️ DIRETRIZ DE CÓDIGO
+### 🚀 Como Executar o Projeto Localmente
 
-- Atualize estritamente o componente de renderização do Kanban para economizar tokens.
+#### 📌 Pré-requisitos
+- Node.js (versão 18 ou superior)
+- Gerenciador de pacotes `npm` ou `bun`
 
-This project was built with [Lovable](https://lovable.dev).
+#### 🔧 Passos para execução
 
-**Live app**: https://licenseaii.lovable.app
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/andrade111/licenseaii.git](https://github.com/andrade111/licenseaii.git)
+   ```
 
-## Build with Lovable
+2. **Entrar na pasta do projeto:**
+   ```bash
+   cd licenseaii
+   ```
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/7600b5be-baee-40eb-a618-dbd669818ec7).
+3. **Instalar as dependências:**
+   ```bash
+   npm install
+   ```
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+4. **Iniciar o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
 
-## Development
+🌐 Aponte seu navegador para `http://localhost:8080` (ou porta indicada no terminal).
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+---
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+<div align="center">
+
+🔗 **Acesse a aplicação online:** [https://licenseaii.lovable.app](https://licenseaii.lovable.app)
+
+<sub>Desenvolvido por **[Gabriel Andrade](https://github.com/andrade111)** & Equipe • 2º Lugar no Hackathon 🏆</sub>
+
+</div>
