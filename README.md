@@ -6,7 +6,6 @@
 
 [![Hackathon Achievement](https://img.shields.io/badge/Hackathon-2º%20Lugar%20🏆-FFD700?style=for-the-badge&logo=trophy)](https://github.com/andrade111/licenseaii)
 [![Live Demo](https://img.shields.io/badge/Live_App-licenseaii.lovable.app-00C853?style=for-the-badge&logo=vercel)](https://licenseaii.lovable.app)
-[![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)](LICENSE)
 
 </div>
 
