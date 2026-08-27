@@ -72,7 +72,7 @@ A plataforma resolve o problema de falta de padronização e riscos de atraso/mu
 
 - Insira dados fictícios realistas de processos de mineração em MG e PA para que a interface já nasça povoada e pronta para demonstração no Pitch.
 
-Atue como desenvolvedor frontend especialista. Atualize a aplicação "GeoReg Matrix" aplicando as modificações abaixo. Desenvolva o código de forma modular, enxuta e direta ao ponto, evitando redundâncias para otimizar o consumo de tokens.
+Atue como desenvolvedor frontend especialista. Atualize a aplicação "LicenseAI" aplicando as modificações abaixo. Desenvolva o código de forma modular, enxuta e direta ao ponto, evitando redundâncias para otimizar o consumo de tokens.
 
 ---
 
@@ -132,7 +132,7 @@ Redesenhe a seção de acompanhamento para uma estrutura visual estilo Trello di
 
 - Adicione interatividade fluida (drag-and-drop nos cards e feedback visual imediato ao acionar o botão de recorreção).
 
-Ajuste o layout da seção "Kanban Interorgânico / Quadro de Acompanhamento" no GeoReg Matrix para o formato clássico do Trello, organizando a leitura e visualização das colunas na horizontal (da esquerda para a direita).
+Ajuste o layout da seção "Kanban Interorgânico / Quadro de Acompanhamento" no LicenseAI para o formato clássico do Trello, organizando a leitura e visualização das colunas na horizontal (da esquerda para a direita).
 
 ---
 
